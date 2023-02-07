@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sassy+Frass&display=swap');
+* {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+.navbar {
+	background-color: #f8ead8;
+	border-bottom: 1px black solid;
+}
+
+/* home page */
+.main {
+	margin-top: 50px;
+}
+
+.main-card {
+	margin: 10px;
+}
+
+.post {
+	margin: 10px;
+}
+
+.main h4 {
+	font-weight: 400;
+}
+
+.main p {
+	font-size: medium;
+	font-weight: 300;
+}
+/* home page */
+.end-tag {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.end-tag > span {
+	font-size: 50px;
+	font-family: 'Sassy Frass', cursive;
+}
+/* about page  */
+
+.about-div {
+	margin-top: 20px;
+}
+
+.about-div > p {
+	padding-left: 3px;
+}
+
+/* contact page */
+
+.contact-div {
+	margin-top: 20px;
+}
+
+.contact-div > p {
+	padding-left: 5px;
+}
+
+/* footer */
+.filler {
+	width: 100%;
+	text-align: center;
+}
+.filler > span {
+	font-family: 'Sassy Frass', cursive;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	background-color: #f8ead8;
+	height: 50px;
+	width: 100%;
+	border-top: 1px solid black;
+}

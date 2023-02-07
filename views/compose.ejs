@@ -1,0 +1,24 @@
+<%- include("partials/header")%>
+
+    <div class="container">
+        <h1>Compose</h1>
+        <hr>
+        <form action="/compose" method="POST">
+            <label for="title" class="fs-4">Title</label>
+            <br>
+            <div class="input-group mb-3">
+                <input type="text" name="title" id="title" size="20" maxlength="30" autofocus class="form-control"
+                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <br>
+            <label for="content" class="fs-4">Content</label>
+            <br>
+            <div class="input-group mb-3">
+                <textarea name="content" id="content" cols="30" rows="10" class="form-control"
+                    aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Publish</button>
+        </form>
+    </div>
+
+    <%- include("partials/footer")%>

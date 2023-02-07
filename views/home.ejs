@@ -1,0 +1,34 @@
+<%- include("partials/header")%>
+    <!-- 
+    <div class="container">
+        <h1>hello</h1>
+        <p>
+            <%= homeContent %>
+        </p>
+    </div> -->
+    <section class="main">
+        <div class="container">
+            <% data.forEach(element=> { %>
+                <div class=" main-card">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <%= element.title %>
+                        </h4>
+                        <p class="card-text">
+                            <%= element.content.slice(0,300) %>
+
+                                <h5>
+                                    <a href="/post/<%=element.title%>" target="_blank" style="text-decoration: none;">.
+                                        . .</a>
+                                </h5>
+                        </p>
+                    </div>
+                </div>
+                <% }); %>
+        </div>
+        <div class="end-tag">
+            <span>end</span>
+        </div>
+    </section>
+
+    <%- include("partials/footer")%>
