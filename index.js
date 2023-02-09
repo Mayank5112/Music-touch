@@ -34,8 +34,9 @@ app.get("/compose", (req, res) => {
 app.get("/post/:postName", async (req, res) => {
     const posttitle = req.params.postName;
     const post = await User.findOne({ title: posttitle })
+    // console.log(post.content)
+    // console.log("This is post title " + post.title + " \nthis is post content " + post.content)
     res.render("post", { post: post })
-    return;
 })
 
 app.post("/compose", async (req, res) => {
