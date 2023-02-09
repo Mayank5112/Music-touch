@@ -10,7 +10,7 @@ const app = express();
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static("public"));
+app.use(express.static(__dirname + "/public"));
 
 const homeContent = "hey this the home starting content"
 const aboutContent = "hey this is about content"
@@ -35,6 +35,7 @@ app.get("/post/:postName", async (req, res) => {
     const posttitle = req.params.postName;
     const post = await User.findOne({ title: posttitle })
     res.render("post", { post: post })
+    return;
 })
 
 app.post("/compose", async (req, res) => {
