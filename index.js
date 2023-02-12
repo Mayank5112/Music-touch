@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
-app.get("/post", async (req, res) => {
+app.get("/", async (req, res) => {
     const data = await User.find({})
     res.render("home", { data: data })
 })
