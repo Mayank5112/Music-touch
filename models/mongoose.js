@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt')
 const env = require('dotenv')
 mongoose.set('strictQuery', false);
-mongoose.connect(process.env.URI, { useNewUrlParser: true });
+mongoose.connect("mongodb://localhost:27017/blog", { useNewUrlParser: true });
 
 const bSchema = new mongoose.Schema({
     title: {
