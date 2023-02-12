@@ -12,19 +12,15 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname + "/public"));
 
-const homeContent = "hey this the home starting content"
-const aboutContent = "hey this is about content"
-const contactContent = "hey this my contact info"
-
 app.get("/post", async (req, res) => {
     const data = await User.find({})
-    res.render("home", { homeContent: homeContent, data: data })
+    res.render("home", { data: data })
 })
 app.get("/about", (req, res) => {
-    res.render("about", { aboutContent: aboutContent })
+    res.render("about")
 })
 app.get("/contact", (req, res) => {
-    res.render("contact", { contactContent: contactContent })
+    res.render("contact")
 })
 
 app.get("/compose", (req, res) => {

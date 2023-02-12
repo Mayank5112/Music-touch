@@ -42,13 +42,47 @@
 /* about page  */
 
 .about-div {
-	margin-top: 20px;
+	margin: 40px auto 0 auto;
+	height: 100vh;
+	/* margin-top: 20px; */
 }
 
 .about-div > p {
 	padding-left: 3px;
 }
 
+.about-heading {
+	font-weight: 400;
+}
+
+.about-ul,
+.about-content {
+	font-weight: 350;
+}
+
+.about-image-1 {
+	border-radius: 10px;
+	z-index: -1;
+	position: absolute;
+	margin-top: 30px;
+	height: 300px;
+	width: 200px;
+	-webkit-box-shadow: -28px 43px 15px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -28px 43px 15px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: -28px 43px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.about-image-2 {
+	border-radius: 10px;
+	position: relative;
+	height: 300px;
+	width: 200px;
+	top: 32%;
+	left: 29%;
+	-webkit-box-shadow: -28px 43px 15px 0px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: -28px 43px 15px 0px rgba(0, 0, 0, 0.3);
+	box-shadow: -28px 43px 15px 0px rgba(0, 0, 0, 0.3);
+}
 /* contact page */
 
 .contact-div {
@@ -71,7 +105,7 @@
 	position: fixed;
 	bottom: 0;
 	background-color: #f8ead8;
-	height: 50px;
+	height: 25px;
 	width: 100%;
 	border-top: 1px solid black;
 }
