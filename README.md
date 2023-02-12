@@ -14,5 +14,5 @@ This is a node application where you can interact with a MongoDB .You can compos
   <li>Install all dependencies {npm i}</li>
   <li>Run command {node index.js}</li>
   <li>Open your browser and type {http://localhost:3010}</li>
-  And you are done
+  <li>And you are done</li>
 </ol>
