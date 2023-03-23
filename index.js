@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require('body-parser')
 const ejs = require('ejs')
-const port = 3010;
+const port = 3000;
 const User = require('./models/mongoose');
 const { response } = require("express");
 const bcrypt = require('bcrypt');
